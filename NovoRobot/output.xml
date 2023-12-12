@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20231205 18:21:46.422" rpa="false" schemaversion="4">
+<suite id="s1" name="Login" source="c:\Users\Schel\Documents\2023\BACK-PI\NovoRobot\login.robot">
+<test id="s1-t1" name="Cenário 2: Abrir como Admin e fazer reserva" line="48">
+<kw name="abrir navegador">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231205 18:21:46.921" level="INFO">Opening browser 'Chrome' to base url 'https://carhub-dh.vercel.app/login'.</msg>
+<status status="PASS" starttime="20231205 18:21:46.919" endtime="20231205 18:21:52.803"/>
+</kw>
+<status status="PASS" starttime="20231205 18:21:46.918" endtime="20231205 18:21:52.804"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20231205 18:21:52.811" endtime="20231205 18:21:53.526"/>
+</kw>
+<kw name="preencher os campos">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_email}</arg>
+<arg>admin@admin.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231205 18:21:53.536" level="INFO">Typing text 'admin@admin.com' into text field 'name:email'.</msg>
+<status status="PASS" starttime="20231205 18:21:53.530" endtime="20231205 18:21:54.367"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231205 18:21:55.369" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20231205 18:21:54.368" endtime="20231205 18:21:55.370"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_password}</arg>
+<arg>123456</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231205 18:21:55.372" level="INFO">Typing text '123456' into text field 'name:password'.</msg>
+<status status="PASS" starttime="20231205 18:21:55.371" endtime="20231205 18:21:55.719"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231205 18:21:57.721" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20231205 18:21:55.719" endtime="20231205 18:21:57.721"/>
+</kw>
+<status status="PASS" starttime="20231205 18:21:53.528" endtime="20231205 18:21:57.722"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231205 18:21:59.735" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20231205 18:21:57.732" endtime="20231205 18:21:59.736"/>
+</kw>
+<kw name="clicar em Entrar">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${button_submitEnter}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231205 18:21:59.744" level="INFO">Clicking element '//button[contains(text(), "Entrar")]'.</msg>
+<status status="PASS" starttime="20231205 18:21:59.743" endtime="20231205 18:22:00.128"/>
+</kw>
+<status status="PASS" starttime="20231205 18:21:59.742" endtime="20231205 18:22:00.128"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231205 18:22:05.154" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20231205 18:22:00.151" endtime="20231205 18:22:05.158"/>
+</kw>
+<kw name="Escolher categoria">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${card_SUV}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231205 18:22:05.164" level="INFO">Clicking element '//div[@class='MuiCardContent-root mui-vxvg9w']'.</msg>
+<msg timestamp="20231205 18:22:07.092" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-94.png"&gt;&lt;img src="selenium-screenshot-94.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20231205 18:22:07.093" level="FAIL">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=119.0.6045.200)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7E4CD82B2+55298]
+	(No symbol) [0x00007FF7E4C45E02]
+	(No symbol) [0x00007FF7E4B0045D]
+	(No symbol) [0x00007FF7E4B42B4C]
+	(No symbol) [0x00007FF7E4B387BF]
+	(No symbol) [0x00007FF7E4B620AA]
+	(No symbol) [0x00007FF7E4B380CF]
+	(No symbol) [0x00007FF7E4B622C0]
+	(No symbol) [0x00007FF7E4B7AAA4]
+	(No symbol) [0x00007FF7E4B61E83]
+	(No symbol) [0x00007FF7E4B3670A]
+	(No symbol) [0x00007FF7E4B37964]
+	GetHandleVerifier [0x00007FF7E5050AAB+3694587]
+	GetHandleVerifier [0x00007FF7E50A728E+4048862]
+	GetHandleVerifier [0x00007FF7E509F173+4015811]
+	GetHandleVerifier [0x00007FF7E4D747D6+695590]
+	(No symbol) [0x00007FF7E4C50CE8]
+	(No symbol) [0x00007FF7E4C4CF34]
+	(No symbol) [0x00007FF7E4C4D062]
+	(No symbol) [0x00007FF7E4C3D3A3]
+	BaseThreadInitThunk [0x00007FFEDF18257D+29]
+	RtlUserThreadStart [0x00007FFEE116AA58+40]
+</msg>
+<status status="FAIL" starttime="20231205 18:22:05.162" endtime="20231205 18:22:07.100"/>
+</kw>
+<status status="FAIL" starttime="20231205 18:22:05.161" endtime="20231205 18:22:07.101"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20231205 18:22:07.105" endtime="20231205 18:22:07.106"/>
+</kw>
+<kw name="Clicar na option">
+<status status="NOT RUN" starttime="20231205 18:22:07.119" endtime="20231205 18:22:07.119"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20231205 18:22:07.120" endtime="20231205 18:22:07.120"/>
+</kw>
+<status status="FAIL" starttime="20231205 18:21:46.917" endtime="20231205 18:22:07.120">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=119.0.6045.200)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7E4CD82B2+55298]
+	(No symbol) [0x00007FF7E4C45E02]
+	(No symbol) [0x00007FF7E4B0045D]
+	(No symbol) [0x00007FF7E4B42B4C]
+	(No symbol) [0x00007FF7E4B387BF]
+	(No symbol) [0x00007FF7E4B620AA]
+	(No symbol) [0x00007FF7E4B380CF]
+	(No symbol) [0x00007FF7E4B622C0]
+	(No symbol) [0x00007FF7E4B7AAA4]
+	(No symbol) [0x00007FF7E4B61E83]
+	(No symbol) [0x00007FF7E4B3670A]
+	(No symbol) [0x00007FF7E4B37964]
+	GetHandleVerifier [0x00007FF7E5050AAB+3694587]
+	GetHandleVerifier [0x00007FF7E50A728E+4048862]
+	GetHandleVerifier [0x00007FF7E509F173+4015811]
+	GetHandleVerifier [0x00007FF7E4D747D6+695590]
+	(No symbol) [0x00007FF7E4C50CE8]
+	(No symbol) [0x00007FF7E4C4CF34]
+	(No symbol) [0x00007FF7E4C4D062]
+	(No symbol) [0x00007FF7E4C3D3A3]
+	BaseThreadInitThunk [0x00007FFEDF18257D+29]
+	RtlUserThreadStart [0x00007FFEE116AA58+40]
+</status>
+</test>
+<doc>Caso de teste Positivo de acesso à tela de login</doc>
+<status status="FAIL" starttime="20231205 18:21:46.440" endtime="20231205 18:22:07.132"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Login">Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
