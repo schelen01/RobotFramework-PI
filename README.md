@@ -15,8 +15,8 @@ Configurações
 
 ## Demosntração da Aplicação
 <h1 align="center">
-  <link src="https://carhub-dh.vercel.app/" >
-  <img src=".\BACK-PI\carhub-main\public\favicon.ico" />
+  <a href=“https://carhub-dh.vercel.app/">CarHub_app</a>
+  <img src="/_next/static/media/logo.525b8b3e.svg"/>
 </h1>
 
 # Acesso aos Testes Automatizados
